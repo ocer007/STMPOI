@@ -40,6 +40,23 @@ The multimodal POI information, including reviews, images, descriptions, categor
 https://foursquare.com/city-guide
 ```
 
+The processed PHO dataset used in our experiments is available at:
+
+```text
+https://drive.google.com/file/d/1wEKgQtsx_L6Biare_pHqskaSaiKntKYd/view?usp=sharing
+```
+
+After downloading, place the dataset under the `dataset/` directory, for example:
+
+```text
+dataset/
+└── PHO/
+    ├── PHO_train.csv
+    ├── PHO_val.csv
+    ├── PHO_test.csv
+    └── ...
+```
+
 ## Running Scripts
 
 Before training, build the required graph files:
@@ -72,4 +89,3 @@ python train_ab_9.py --data-train ../dataset/PHO/PHO_train.csv --data-val ../dat
                 --project runs/PHO \
                 --batch 32
 ```
-
